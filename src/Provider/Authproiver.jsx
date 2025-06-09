@@ -5,16 +5,20 @@ export const AuthCntx = createContext(null)
 const Authproiver = ({children}) => {
 
     const [user, setUser] = useState(null)
+    const [refresh, setrefresh] = useState(true)
 
     const createUser = (email,passsword) =>{
        return createUserWithEmailAndPassword(auth,email,passsword)
+       setrefresh(true)
     }
     const loginUser = (email,passsword)=>{
         return signInWithEmailAndPassword(auth, email, passsword)
+        setrefresh(true)
     }
 
     const signOuts = ()=>{
         return  signOut(auth)
+        setrefresh(true)
     }
 
 
@@ -24,6 +28,7 @@ const Authproiver = ({children}) => {
             const notChange = onAuthStateChanged(auth, currentUser=>{
                 console.log(currentUser)
                 setUser(currentUser)
+                setrefresh(false)
             })
             return()=>{
                 notChange()
@@ -36,7 +41,8 @@ const Authproiver = ({children}) => {
         createUser,
         loginUser,
         user,
-        signOuts
+        signOuts,
+        refresh
     }
     return (
         <AuthCntx.Provider value={drive}>

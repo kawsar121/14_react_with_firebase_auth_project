@@ -22,6 +22,9 @@ const Nav = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/login'>Login</NavLink></li>
         <li><NavLink to='/register'>register</NavLink></li>
+        {
+          user && <li><NavLink to='/dashbord'>Dashbord</NavLink></li>
+        }
     </>
 
   

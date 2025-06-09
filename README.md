@@ -1,12 +1,19 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* First setup  a react router
+* Tailwind setup
+* Daisy ui setup
+* make login, register, home ect folder
+* use javascript and collect data simply way
+* go firebase console 
+* create a project
+* go authenticate and make a file
+* create a user
+* sign in signOut complete
+* important topicas is Context Api
+* make a authCotext file
+* then a make cretae context and collab with main jsx then controll with children props
+* useContext
+* Login remove na howar jonno onAuthStateChanged use korte hobe
+* akta private route make korte hobe...jate user sara kew dukte na pare
+* private route ta refresh korle sole na jawar jonno onAuthStateChanged er modde akta useState set kore ta false kore dite hobe
+* useNavigate use korar karon holo ,, login complete howe gele jate sorasori er maddome kono akta page e show koraite pare
+* useNavigate er kaz holo kono jawgai jawar rasta kore dewa
